@@ -7,6 +7,23 @@ const lyricslist = [
     "And now, the end is near\nAnd so I face the final curtain\nMy friend, I'll say it clear\nI'll state my case, of which I'm certain\nI've lived a life that's full\nI traveled each and every highway\nAnd more, much more than this, I did it my way\nRegrets, I've had a few\nBut then again, too few to mention\nI did what I had to do\nAnd saw it through without exemption\nI planned each charted course\nEach careful step along the byway\nAnd more, much more than this, I did it my way\nYes, there were times, I'm sure you knew\nWhen I bit off more than I could chew\nBut through it all, when there was doubt\nI ate it up and spit it out\nI faced it all and I stood tall and did it my way\nI've loved, I've laughed and cried\nI've had my fill, my share of losing\nAnd now, as tears subside\nI find it all so amusing\nTo think I did all that\nAnd may I say, not in a shy way\nOh, no, oh, no, not me, I did it my way\nFor what is a man, what has he got?\nIf not himself, then he has naught\nTo say the things he truly feels\nAnd not the words of one who kneels\nThe record shows\nI took the blows\nAnd did it my way\nYes, it was my way"
 ]
 
+const images = [
+    "placeholder.jpg",
+    "SweetChildOMine.jpg",
+    "Metallica_cover.jpg",
+    "LivinOnAPrayer.jpg",
+    "CaliforniaLove.jpg",
+    "tATu_attss.jpg",
+    "My_Way_Frank_Sinatra.jpg"
+]
+
+images.forEach(url => preloadImage(url));
+
+function preloadImage(url) {
+    const img = new Image();
+    img.src = url;
+}
+
 function takeInputBoxValue() {
     let x = document.getElementById("idinputbox").value;
     let lyrics;
