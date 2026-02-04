@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Lyrics Centre</title>
+        <script src="code.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div> 
+            <h1>Lyrics Centre</h1>
+            <details>
+                <summary>Lyrics Selection</summary>
+                <p>Currectly available songs:</p>
+                <ol>
+                    <li>Sweet Child of Mine</li>
+                    <li>Enter Sandman</li>
+                    <li>Livin of a Prayer</li>
+                    <li>California Love</li>
+                    <li>All The Things She Said</li>
+                    <li>My Way</li>
+                </ol>
+                <input type="text" id="idinputbox" placeholder="Song ID">
+                <button onclick="takeInputBoxValue()">Submit</button>
+            </details>
+        </div>
+
+        <br>
+
+        <div>
+            <img src="cover/placeholder.jpg" id="album cover" width="300" height="300">
+            <h2 id="title"></h1>
+            <h4 id="artist"></h2>
+            
+            <p id="lyrics"></p><br>
+            
+        </div>
+    </body>
+</html>
